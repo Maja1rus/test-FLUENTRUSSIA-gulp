@@ -1,0 +1,95 @@
+.about {
+    position: relative;
+
+
+
+    // .about__wrap
+
+    &__wrap {
+        position: relative;
+        padding-top: 160px;
+        padding-bottom: 190px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1000px;
+            width: 550px;
+            bottom: -525px;
+            right: -80px;
+            background-image: url('../img/bg-line/bg-line-03.svg');
+            background-size: initial;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    // .about__title
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    // .about__cart
+
+    &__cart {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .about__subtitle
+
+    &__subtitle {}
+}
+
+.about-card {
+
+    // .about-card__item
+
+    &__item {
+
+        position: relative;
+        width: 300px;
+        height: 280px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 280px;
+            z-index: 0;
+        }
+
+        &::after {
+            background-color: var(--color-black);
+            bottom: -16px;
+            left: -16px;
+        }
+
+        &::before {
+            bottom: -32px;
+            left: -32px;
+            border: 1px solid var(--color-black);
+        }
+    }
+
+    // .about-card__text
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        padding: 0 5px;
+        z-index: 11;
+        width: 300px;
+        height: 280px;
+        background-color: var(--bg-dark-gray);
+        border: 1px solid var(--color-black);
+    }
+}

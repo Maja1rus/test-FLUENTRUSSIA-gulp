@@ -1,0 +1,98 @@
+.advantages {
+
+    // .advantages__text
+
+    &__text {
+        padding-top: 160px;
+    }
+
+    // .advantages__title
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    // .advantages__subtitle
+
+    &__subtitle {
+        margin-left: 450px;
+        margin-bottom: 80px;
+    }
+
+    // .advantages__wrap
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 183px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1000px;
+            width: 550px;
+            bottom: -390px;
+            right: -80px;
+            background-image: url('../img/bg-line/bg-line-03.svg');
+            background-size: initial;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    // .advantages__img
+
+    &__img {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 860px;
+            width: 650px;
+            top: 80px;
+            left: -40px;
+            background-image: url('../img/img-content/advantages.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    // .advantages__card
+
+    &__card {
+        position: relative;
+        width: 528px;
+        height: 280px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 528px;
+            height: 280px;
+            z-index: 0;
+        }
+
+        &::after {
+            background-color: var(--color-black);
+            bottom: -16px;
+            left: -16px;
+        }
+
+        &::before {
+            bottom: -32px;
+            left: -32px;
+            border: 1px solid var(--color-black);
+        }
+    }
+}
+
+
+.advantages-card__text {
+    width: 528px;
+    height: 280px;
+}

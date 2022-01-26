@@ -1,0 +1,51 @@
+.nav {}
+
+.header-top {
+
+    // .header-top__wrap
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 114px;
+    }
+
+    // .header-top__logo
+
+    &__logo {}
+
+    // .header-top__nav
+
+    &__nav {
+
+        &--mobile {
+            display: none;
+        }
+    }
+}
+
+.nav {
+
+    // .nav__wrap
+
+    &__wrap {
+        display: flex;
+    }
+
+    // .nav__item
+
+    &__item+&__item {
+        margin-left: 50px;
+    }
+
+    // .nav__link
+
+    &__link {
+        transition: all 0.2 ease-in;
+
+        &:hover {
+            color: var(--color-red);
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.education {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    // .education__title
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    // .education__subtitle
+
+    &__subtitle {
+        margin-left: 450px;
+        margin-bottom: 80px;
+
+        &--red {
+            color: var(--color-red);
+        }
+    }
+
+    &__img {
+        width: 340px;
+        height: 780px;
+    }
+
+    // .education__block
+
+    &__block {
+        display: flex;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: -170px;
+        left: -80px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 340px;
+            height: 780px;
+            z-index: 0;
+        }
+
+        &::after {
+            background-color: var(--color-black);
+            bottom: 24px;
+            left: 24px;
+        }
+
+        &::before {
+            bottom: 48px;
+            left: 48px;
+            background-color: var(--bg-gray);
+            border: 1px solid var(--color-black);
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    // .education__text
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 500px;
+        margin-bottom: 80px;
+        position: relative;
+
+    }
+
+    // .education__wrap
+
+    &__wrap {}
+
+    // .education__list--one
+
+    &__list--one li {
+        padding-top: 40px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 25px;
+            left: -40px;
+            background-image: url('../img/icon/star-list-01.svg');
+        }
+
+    }
+
+    &__list--two li {
+        position: relative;
+        margin-top: 40px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 25px;
+            left: -40px;
+            background-image: url('../img/icon/star-list-02.svg');
+        }
+    }
+
+    // .education__item
+
+    &__item {
+        width: 510px;
+    }
+}
